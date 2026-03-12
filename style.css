@@ -375,7 +375,7 @@ header {
 
 .bonus-lbl {
   font-size: 0.52rem;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold-dark);
   font-weight: 700;
