@@ -209,7 +209,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s;
   clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
   animation: fadeInUp 0.9s ease 0.3s both;
@@ -217,26 +217,27 @@ header {
   text-align: center;
 }
 
-.btn-hero:hover {
+/* .btn-hero:hover {
   background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(201, 168, 76, 0.5);
-}
+} */
 
 .urgency {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.68rem;
+  font-size: 1.25rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--navy);
   margin-top: 14px;
   animation: fadeInUp 0.9s ease 0.35s both;
+  justify-content: center;
 }
 
 .urgency .exp {
-  color: var(--gold-light);
+  color: #fcfcfc;
   font-weight: 700;
 }
 
@@ -1235,6 +1236,12 @@ footer {
   }
 }
 
+@media(max-width:1200px) {
+  .urgency {
+    font-size: .9rem;
+  }
+}
+
 @media(max-width:900px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -1296,7 +1303,7 @@ footer {
   }
 
   .btn-hero {
-    font-size: 1rem;
+    font-size: .8rem;
     padding-left: 20px;
     padding-right: 20px;
   }
