@@ -1342,6 +1342,21 @@ footer {
   .contact-details {
     text-align: center;
   }
+
+  .sticky-bar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .urgency{
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+  .urgency .dot{
+    display: none;
+  }
 }
 
 /* LIGHTBOX */
